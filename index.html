@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YouTube Grid Player</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="controls">
+  <input type="number" id="frame-count" placeholder="ফ্রেম সংখ্যা" value="4" min="1">
+  <input type="text" id="youtube-links" placeholder="YouTube লিংক (কমা দিয়ে আলাদা করুন)" size="50">
+  <input type="number" id="start-time" placeholder="সেকেন্ড থেকে শুরু" value="0">
+  <input type="number" id="loop-count" placeholder="Loop সংখ্যা" value="1">
+  <input type="text" id="api-key" placeholder="Google API Key" size="25">
+  <button onclick="loadVideos()">ভিডিও লোড করুন</button>
+</div>
+
+<div id="video-grid"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
